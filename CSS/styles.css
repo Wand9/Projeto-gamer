@@ -1,0 +1,21 @@
+/* imports da fonte */
+@font-face {
+    font-family: TitilliumWeb-Black;
+    src: url(../assets/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile First */
+
+header .header-top .phone {
+    color: green;
+}
+
+header .header-bottom .phone {
+    color: tomato;
+}
