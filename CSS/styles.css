@@ -10,12 +10,72 @@
     box-sizing: border-box;
 }
 
+body {
+    color: white;
+}
+
+/* Classes genericas */
+.layout-grid {
+    border:  1px solid salmon;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*  Justify content + align items */
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Mobile First */
 
-header .header-top .phone {
-    color: green;
+/* HEADER */
+header {
+    height: 60px;
+    background-color: #1b1426;
 }
 
-header .header-bottom .phone {
-    color: tomato;
+/* Header top */
+header .header-top {
+    display: none;
+    
 }
+
+/* Header bottom */
+
+header .header-bottom {
+    height: 100%;
+}
+
+header .header-bottom img.logo {
+    width: 86px;
+}
+
+header .header-bottom nav {
+    display: none;
+}
+
+/* .logo {
+    width: 86px;
+} */
+
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 80vw;
+    height: calc(100vh - 60px);
+
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    border: 1px solid white;
+
+}
+
+header .header-bottom .menu-usuarios {
+    display: none;
+}
+
