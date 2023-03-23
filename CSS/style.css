@@ -227,6 +227,104 @@ main .jogos .jogos-flex {
     align-items: center;
 }
 
+/* Sessão Progamer professor */
+
+
+
+
+section.progamer {
+    /* apenas para visualizar o box, pois o fundo é transparente */
+    background-color: #F9AA01;
+}
+
+section.progamer .progamer-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 80px;
+    padding-right: 20px;
+    padding-bottom: 120px;
+    padding-left: 20px;
+}
+
+section.progamer h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: TitilliumWeb-Black;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+section.progamer hr {
+    width: 50%;
+    margin: 0 auto 60px;
+    border: 1px solid #000;
+}
+
+/* efeito borda gradient */
+section.progamer .gamers {
+    /* para servir de referência ao absolute */
+    position: relative;
+    margin-bottom: 20px;
+    /* border: 1px solid #EC4358; */
+}
+
+section.progamer .progamer-flex .gamers>img {
+    width: 314px;
+}
+
+
+section.progamer .progamer-flex .gamers #jogos-diferentes {
+    position: absolute;
+    right: 0;
+    bottom: 90px;
+}
+
+section.progamer .progamer-flex .gamers #professores {
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+section.progamer .gamers .card-bkg .produto {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    max-width: 231px;
+    height: 300px;
+    padding: 25px;
+    font-size: .8rem;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .83));
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+}
+
+section.progamer .card-bkg .produto h3 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: TitilliumWeb-Black;
+    /* text-shadow: 0 0 0px #fff; */
+    text-align: justify;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cards-progamer-layer .card-bkg .produto p {
+    font-family: Inter-Thin;
+    text-align: justify;
+}
+
+
+
+
+
 /* Footer */
 footer {
     padding-top: 60px;

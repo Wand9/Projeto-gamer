@@ -156,24 +156,14 @@ main {
     margin-top: 60px;
 }
 
-/* Banner */
-main .login h1 {
-    font-family: TitilliumWeb-Black;
-    font-size: 28px;
-}
-.login div {
-    width: 100%;
+/* Banner Login */
+.login div { 
     height: 687px;
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-evenly;
     background-image: url(../assets/images/Banner_Login.png);
-
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 
