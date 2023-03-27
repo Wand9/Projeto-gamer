@@ -227,13 +227,8 @@ main .jogos .jogos-flex {
     align-items: center;
 }
 
-/* Sessão Progamer professor */
-
-
-
-
+/* sessão progamer */
 section.progamer {
-    /* apenas para visualizar o box, pois o fundo é transparente */
     background-color: #F9AA01;
 }
 
@@ -321,10 +316,6 @@ section.progamer .card-bkg .produto h3 {
     text-align: justify;
 }
 
-
-
-
-
 /* Footer */
 footer {
     padding-top: 60px;
@@ -359,7 +350,6 @@ footer #midias-sociais-footer {
     justify-content: space-between;
 }
 
-
 footer .footer-top {
     display: flex;
     flex-direction: column;
@@ -368,7 +358,7 @@ footer .footer-top {
 }
 /* apagar */
 footer .footer-top > div {
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 
 footer .footer-top .titulos-footer h3 {

@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Projeto Gamer</title>
-    <link rel="stylesheet" href="./CSS/login.css">
+    <title>Login</title>
+
+    <!-- Mobile -->
+    <link rel="stylesheet" href="../css/imports-and-generics.css">
+    <link rel="stylesheet" href="../css/utililities.css">
+    <link rel="stylesheet" href="../css/mobile-header.css">
+    <link rel="stylesheet" href="../css/mobile-footer.css">
+    <link rel="stylesheet" href="../css/mobile-login.css">
+
+    <!-- Desktop -->
+    <link rel="stylesheet" href="../css/desktop-header.css" media="(min-width: 1024px)">
+    <link rel="stylesheet" href="../css/desktop-footer.css" media="(min-width: 1024px)">
+    <link rel="stylesheet" href="../css/desktop-login.css" media="(min-width: 1024px)">
 </head>
-
 <body>
-
     <header>
 
         <!-- linha de cima com a borda amarela -->
@@ -100,69 +108,26 @@
             </div>
         </div>
     </header>
-
-
-    <!-- Banner Login -->
-    <main>
-        <section class="login">
-            <h1>Login</h1>
-
-            <div class="layout-grid">
-                <img src="assets/images/Banner_Login.png" alt="">
+    
+    <main class="content">
+        <form action="" class="login-form background-glass">
+            <div class="title-wrapper">
+                <h1 class="form-title">Login</h1>
+                <hr class="yellow-line">
             </div>
-        </section>
-
+            <div class="inputs">
+                <div class="text-input transparent-input">
+                    <img src="../assets/icons/user-white-icon.png" alt="">
+                    <input type="text" name="email" id="email-login" placeholder="Digite seu e-mail:">
+                </div>
+                <div class="password-input transparent-input">
+                    <img src="../assets/icons/key-white-icon.png" alt="">
+                    <input type="password" name="password" id="password-login" placeholder="Digite sua senha:">
+                </div>
+            </div>
+            <button class="send-button yellow-button" type="submit">Logar</button>
+        </form>
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <footer>
         <div class="layout-grid footer-top">
@@ -238,7 +203,7 @@
 
             <div id="newsletter">
                 <div class="titulos-footer">
-                    <h3>Contatos</h3>
+                    <h3>newsletter</h3>
                     <hr>
                 </div>
 
@@ -259,16 +224,20 @@
 
     </footer>
 
-
     <script>
-            function mostrarMenu() {
-                document.getElementById("menu").classList.toggle("mostrar-menu");
-            }
-            function mostrarUsuarios() {
-                document.getElementById("menu-usuarios").classList.toggle("mostrar-usuarios");
-            }
+        function clickMenuButton() {
+            const menu = document.getElementById('menu').classList.toggle('show-left-menu')
+        }
+
+        function clickUserMenuButton() {
+            const userMenu = document.getElementById('user-menu')
+            userMenu.classList.toggle('show-right-menu')
+        }
+
+        function clickReturnTop() {
+            document.body.scrollTop = 0 // For Safari
+            document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+        }
     </script>
-
-
 </body>
- </html>
+</html>

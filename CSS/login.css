@@ -151,52 +151,68 @@ header .header-bottom .menu-usuarios {
     transition: right 0.4s;
 }
 
-/* MAIN */
-main {
+/* Mobile Login */
+
+/* Main */
+
+main.content {
+    height: 687px;
     margin-top: 60px;
+    padding: 82px 20px;
+    background-image: url(../assets/images/desktop-login-background.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* Banner Login */
-.login div { 
-    height: 687px;
+main.content form.login-form {
+    height: 462px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 
+main.content form.login-form div.inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main.content form.login-form div.inputs div.text-input,
+main.content form.login-form div.inputs div.password-input {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    background-image: url(../assets/images/Banner_Login.png);
+    padding: 0;
 }
 
+main.content form.login-form div.inputs img {
+    height: 23px;
+    margin: 0 12px;
+}
 
+main.content form.login-form div.inputs input { 
+    width: 80%;
+    height: 100%;
+    padding: 12px 0;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-family: "TitilliumWeb-Regular";
+    font-size: 16px;
+}
 
+main.content form.login-form div.inputs input::placeholder {
+    font-family: "TitilliumWeb-Regular";
+    font-size: 16px;
+    color: #fff;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+main.content form.login-form div.inputs input:focus {
+    outline: none;
+}
 
 /* Footer */
 footer {
